@@ -1,4 +1,44 @@
-@font-face {
-    font-family: 'FacultyGlyphic';
-    src: url("./assets/FacultyGlyphic-Regular.ttf");
+.wrapper {
+  max-width: 600px;
+  max-height: 400px;
+  overflow: scroll;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid;
+  padding: 10px 20px;
+}
+
+thead th {
+  border: 1px solid black;
+  font-weight: 400;
+  font-style: italic;
+  background-color: rgb(214, 183, 244);
+}
+
+tbody th,
+tfoot th {
+  border: 1px solid black;
+  text-align: right;
+  font-weight: bold;
+}
+
+tfoot {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+tbody td {
+  box-sizing: border-box;
+  text-wrap: nowrap;
+  max-width: 150px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 }
