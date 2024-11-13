@@ -1,4 +1,76 @@
 @font-face {
-    font-family: 'FacultyGlyphic';
-    src: url("./assets/FacultyGlyphic-Regular.ttf");
+  font-family: "FacultyGlyphic";
+  src: url("./assets/FacultyGlyphic-Regular.ttf");
+}
+
+.page {
+  padding-inline: 10vw;
+  font-family: "FacultyGlyphic", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+}
+
+.imageRounded {
+  width: 200px;
+  border: 5px solid rgb(35, 159, 68);
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.personal .description {
+  text-indent: 1.5em;
+}
+
+.personal .description::first-letter {
+  color: rgb(112, 16, 209);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.skills .description {
+  word-spacing: 20px;
+  text-align: center;
+}
+
+.jobList li {
+  background: url("./assets/favicon.ico");
+  list-style: none;
+  padding-left: 25px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  margin: 8px;
+}
+
+.linksItem {
+  display: flex;
+  align-items: center;
+}
+
+.linkText:hover {
+  text-decoration-color: rgb(255, 145, 0);
+}
+
+.linkImg:hover {
+  fill: hsl(300, 100%, 25%);
+}
+
+.optionalText {
+  width: fit-content;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 10px;
+  background-color: #c0f4c9;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #800080;
+  height: 150px;
 }
