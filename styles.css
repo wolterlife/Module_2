@@ -42,3 +42,31 @@ tbody td {
   overflow-x: hidden;
   text-overflow: ellipsis;
 }
+
+.form {
+  width: fit-content;
+  border: 2px solid rgb(111, 21, 255);
+  padding: 10px;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formGroup {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.multiInput {
+  resize: horizontal;
+  caret-color: red;
+}
+
+.inactiveField:hover {
+  cursor: not-allowed;
+}
+
+.submitBtn {
+  margin-top: 10px;
+}

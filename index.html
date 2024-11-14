@@ -134,5 +134,99 @@
         </tfoot>
       </table>
     </div>
+    <form class="form" action="" method="post">
+      <div class="formGroup">
+        <label for="firstName">First name:</label>
+        <input
+          id="firstName"
+          name="firstName"
+          placeholder="John"
+          required
+          minlength="2"
+        />
+      </div>
+      <div class="formGroup">
+        <label for="secondName">Second name:</label>
+        <input
+          id="secondName"
+          name="secondName"
+          placeholder="Rodrigez"
+          required
+          minlength="2"
+        />
+      </div>
+      <div class="formGroup">
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          name="email"
+          placeholder="john.rodrigez@gmail.com"
+          required
+          minlength="2"
+          type="email"
+        />
+      </div>
+      <div class="formGroup">
+        <label for="phone">Phone:</label>
+        <input
+          id="phone"
+          name="phone"
+          placeholder="(212) 555-1212"
+          required
+          type="text"
+          pattern="^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}$"
+          title="Example: (212) 555-1212"
+        />
+      </div>
+      <fieldset>
+        <legend>Choose age</legend>
+        <input type="radio" name="age" id="young" value="young" required />
+        <label for="young">young (0-18)</label><br />
+        <input type="radio" name="age" id="middle" value="middle" />
+        <label for="middle">middle (18-40)</label><br />
+        <input type="radio" name="age" id="senior" value="senior" />
+        <label for="senior">senior (40+)</label><br />
+      </fieldset>
+      <div class="formGroup">
+        <label for="option">Select option:</label>
+        <select id="option" name="option">
+          <option value="free">free</option>
+          <option value="free">premium</option>
+          <option value="free">business</option>
+        </select>
+      </div>
+      <div class="formGroup">
+        <label for="favNumber">Favorite number:</label>
+        <input id="number" name="number" type="number" value="42" required />
+      </div>
+      <div class="formGroup">
+        <label for="multiInput">Feedback:</label>
+        <textarea
+          class="multiInput"
+          id="multiInput"
+          name="multiInput"
+          rows="3"
+        ></textarea>
+      </div>
+      <div class="formGroup">
+        <label for="pass">Pass:</label>
+        <input id="pass" name="pass" type="password" required />
+      </div>
+      <div class="formGroup">
+        <label for="inactiveField">Inactive:</label>
+        <input
+          class="inactiveField"
+          id="inactiveField"
+          name="inactiveField"
+          type="text"
+          disabled
+        />
+      </div>
+      <div class="formGroup">
+        <label for="confirm">Confirm?</label>
+        <input id="confirm" name="confirm" type="checkbox" required />
+      </div>
+      <input class="submitBtn" type="submit" value="finish" />
+    </form>
   </body>
 </html>
