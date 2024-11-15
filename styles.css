@@ -1,4 +1,134 @@
 @font-face {
-    font-family: 'FacultyGlyphic';
-    src: url("./assets/FacultyGlyphic-Regular.ttf");
+  font-family: "FacultyGlyphic";
+  src: url("./assets/FacultyGlyphic-Regular.ttf");
+}
+
+.nav {
+  background-color: #fb9664;
+}
+
+.navContent {
+  display: flex;
+  font-family: "FacultyGlyphic", sans-serif;
+  font-size: 22px;
+  padding: 4px 0;
+  justify-content: space-between;
+  max-width: 1280px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #39629e;
+}
+
+.logoImg {
+  width: 80px;
+  border-radius: 50%;
+  margin-left: 18px;
+}
+
+.navRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkText {
+  color: #39629e;
+  text-decoration: none;
+  margin-right: 24px;
+}
+
+.avatar {
+  width: 60px;
+  margin-right: 20px;
+}
+
+.burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.burger {
+  cursor: pointer;
+  display: none;
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 30px;
+  height: 26px;
+  margin: 30px 15px;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: #39629e;
+}
+
+.burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 #39629e;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
+.burger-checkbox:checked + .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+}
+
+.burger-checkbox:checked + .burger::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 680px) {
+  .burger {
+    display: block;
+  }
+
+  .navLinks {
+    display: none;
+    position: absolute;
+    top: 72px;
+    right: 0px;
+    background-color: #f1ae8d;
+    border: 2px solid rgb(0, 0, 0);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 12px;
+    height: 150px;
+  }
+
+  .logoText {
+    display: none;
+  }
+
+  .burger-checkbox:checked ~ .navLinks {
+    display: flex;
+  }
 }
